@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Regression Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 15px 40px;
+            margin: 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            color: #fff;
+            background: linear-gradient(to right, #FF416C, #FF4B2B);
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: justify;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #4CAF50;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Weather Regression Model Project</h1>
+    </div>
+
+    <div class="button-container">
+        <button onclick="openPage('lr')">Linear Regression (Lr)</button>
+        <button onclick="openPage('pr')">Polynomial Regression (Pr)</button>
+        <button onclick="openPage('svr')">Support Vector Regression (Svr)</button>
+
+    </div>
+
+    <div class="content">
+       <img src="images/Svr.png" alt="">
+    </div>
+
+    <script>
+        function openPage(pageName) {
+            window.location.href = `${pageName}`;
+        }
+    </script>
+</body>
+</html>
